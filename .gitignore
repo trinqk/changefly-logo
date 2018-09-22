@@ -16,3 +16,9 @@ doc/api/
 .idea/
 *.xml
 *.iml
+.DS_Store
+.atom/
+build/
+ios/.generated/
+packages
+pubspec.lock
