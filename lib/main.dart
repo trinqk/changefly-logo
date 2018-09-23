@@ -16,7 +16,7 @@ class BasicFlutterApp extends StatelessWidget {
       debugShowMaterialGrid: false,
       showPerformanceOverlay: false,
       title: "Basic Flutter App",
-      home: ChangeFly(),
+      home: Changefly(),
     );
   }
 }

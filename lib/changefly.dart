@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
 import 'package:changefly_coding_challenge/logo/changefly_animation.dart';
+import 'package:changefly_coding_challenge/logo2/changefly_animation2.dart';
 
-class ChangeFly extends StatefulWidget {
+class Changefly extends StatefulWidget {
   @override
-  _ChangeFlyState createState() => _ChangeFlyState();
+  _ChangeflyState createState() => _ChangeflyState();
 }
 
-class _ChangeFlyState extends State<ChangeFly> with SingleTickerProviderStateMixin{
+class _ChangeflyState extends State<Changefly> with SingleTickerProviderStateMixin{
 
   // Controller for the animation.
   AnimationController _controller;

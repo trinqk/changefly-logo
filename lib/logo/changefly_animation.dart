@@ -29,8 +29,10 @@ class ChangeflyAnimation extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
 
-        // Assemble the logo
+        // Assemble the logo here
+        // Cube portion of the logo
         LogoCube(controller: controller, animationCurve: animationCurve, screenWidth: screenWidth),
+        // Header portion of the logo
         LogoHeader(controller: controller, animationCurve: animationCurve),
 
       ],
