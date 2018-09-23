@@ -4,9 +4,9 @@ import 'package:meta/meta.dart';
 import 'package:changefly_coding_challenge/logo/header_animation.dart';
 import 'package:changefly_coding_challenge/logo/cube_animation.dart';
 
-class ChangeFlyAnimation extends StatelessWidget {
+class ChangeflyAnimation extends StatelessWidget {
 
-  ChangeFlyAnimation({
+  ChangeflyAnimation({
     Key key,
     @required this.controller,
   }) : super(key : key);
