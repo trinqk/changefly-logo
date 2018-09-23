@@ -26,9 +26,11 @@ class LogoHeader extends StatelessWidget {
 
   /// Asset location
   final String header = "assets/images/changefly-name.png";
+
   /// Logo animation necessities
   final AnimationController controller;
   final Curve animationCurve;
+  
   /// Header [Animation]
   final Animation<double> headerOpacity;
 

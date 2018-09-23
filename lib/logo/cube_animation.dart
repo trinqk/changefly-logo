@@ -153,7 +153,7 @@ class LogoCube extends StatelessWidget {
   final AnimationController controller;
   final Curve animationCurve;
   final double screenWidth;
-  
+
   /// Cube [Animation]s
   final Animation<double> cubeOpacity;
   final Animation<double> cubeWidth;
