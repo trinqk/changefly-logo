@@ -30,14 +30,13 @@ class LogoHeader extends StatelessWidget {
   /// Logo animation necessities
   final AnimationController controller;
   final Curve animationCurve;
-  
+
   /// Header [Animation]
   final Animation<double> headerOpacity;
 
+  // Build the header
   Widget _buildHeaderAnimation(BuildContext context, Widget child) {
-
     final screenWidth = MediaQuery.of(context).size.width;
-
     return Opacity(
       opacity: headerOpacity.value,
       child: Padding(
