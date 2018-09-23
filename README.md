@@ -1,6 +1,6 @@
-# changefly_coding_challenge
+# Changefly Code Challenge
 
-A new Flutter application.
+Animated [Changefly](https://changefly.com) logo made with Flutter.
 
 ## Getting Started
 
