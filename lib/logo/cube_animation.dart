@@ -148,10 +148,12 @@ class LogoCube extends StatelessWidget {
   final String topCube = "assets/images/changefly-cube-top.png";
   final String leftCube = "assets/images/changefly-cube-left.png";
   final String rightCube = "assets/images/changefly-cube-right.png";
+
   /// Logo animation necessities
   final AnimationController controller;
   final Curve animationCurve;
   final double screenWidth;
+  
   /// Cube [Animation]s
   final Animation<double> cubeOpacity;
   final Animation<double> cubeWidth;

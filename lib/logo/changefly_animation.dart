@@ -15,6 +15,7 @@ class ChangeflyAnimation extends StatelessWidget {
   /// This [AnimationController] can be handled more effectively but,
   /// I think it's pretty overkill so I'm passing it manually
   final AnimationController controller;
+
   // animationCurve is defined on changefly.com
   static final Curve animationCurve = Cubic(0.42,0.0,0.58,1.0);
 
@@ -27,8 +28,11 @@ class ChangeflyAnimation extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
+
+        // Assemble the logo
         LogoCube(controller: controller, animationCurve: animationCurve, screenWidth: screenWidth),
         LogoHeader(controller: controller, animationCurve: animationCurve),
+
       ],
     );
   }

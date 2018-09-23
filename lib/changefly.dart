@@ -11,6 +11,7 @@ class _ChangeFlyState extends State<ChangeFly> with SingleTickerProviderStateMix
 
   // Controller for the animation.
   AnimationController _controller;
+
   // Animation duration control
   // Default duration is 1.1s(You can change it if you want)
   // 0.6s duration for the cube animation
