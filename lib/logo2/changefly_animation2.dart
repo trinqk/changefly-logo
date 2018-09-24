@@ -17,6 +17,8 @@ class ChangeflyAnimation2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(width: 100.0,
+    height: 100.0,
+    color: Colors.grey,);
   }
 }

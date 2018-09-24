@@ -20,6 +20,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
+  # Installed for the pageview to show different animations
+  dots_indicator: ^0.0.4
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
