@@ -49,6 +49,7 @@ flutter:
     - assets/images/changefly-cube-right.png
     - assets/images/changefly-cube-top.png
     - assets/images/changefly-name.png
+    - assets/images/changefly-cube.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

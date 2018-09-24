@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:meta/meta.dart';
 
 import 'package:changefly_coding_challenge/logo/header_animation.dart';
 import 'package:changefly_coding_challenge/logo/cube_animation.dart';

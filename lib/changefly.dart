@@ -47,7 +47,8 @@ class _ChangeflyState extends State<Changefly> with SingleTickerProviderStateMix
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Changefly animations
+
+      /// Changefly animations
       body: Stack(
         alignment: Alignment.bottomCenter,
         children: <Widget>[
@@ -56,7 +57,7 @@ class _ChangeflyState extends State<Changefly> with SingleTickerProviderStateMix
         ],
       ),
 
-      // Repeat animation button
+      /// Repeat animation button
       floatingActionButton: FloatingActionButton(
         backgroundColor: Color(0xFF50cbdf),
         child: Icon(Icons.refresh,),
@@ -77,21 +78,32 @@ class _ChangeflyState extends State<Changefly> with SingleTickerProviderStateMix
         setState(() {_currentIndex = index;});
       },
       children: <Widget>[
-        // CHANGEFLYLOGO
+
+        /// [TickerMode] stops the animation of pages not showing
+        /// [Center] centers the widget
+
+        // Initial part of challenge
         Center(
-          child: ChangeflyAnimation(controller: _controller,),
+          child: TickerMode(
+            enabled: _currentIndex == 0,
+            child: ChangeflyAnimation(controller: _controller,),
+          ),
         ),
 
-        // BONUS LOGO CONCEPT
+        /// BONUS LOGO CONCEPT
         Center(
-          child: ChangeflyAnimation2(controller: _controller),
+          child: TickerMode(
+            enabled: _currentIndex == 1,
+            child: ChangeflyAnimation2(controller: _controller),
+          ),
         ),
+
       ],
     );
   }
 
   Widget _buildPageViewIndicator() {
-    // Indicates which animation is currently being shown
+    /// Indicates which animation is currently being shown
     return SafeArea(
       child: Padding(
         padding: EdgeInsets.only(bottom: 16.0),
