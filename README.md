@@ -4,7 +4,9 @@ Animated [Changefly](https://changefly.com) logo made with Flutter.
 You can also swipe right to see an alternative design .     
 
 Try to use an actual device.  
-Emulators run on debug mode, causing animations to look choppy.
+Emulators run on debug mode, causing animations to look choppy.  
+
+To get a brief overview please read doc.txt
 
 ## Getting Started
 
