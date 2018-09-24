@@ -1,0 +1,139 @@
+////////////////////////
+Changefly Logo Challenge
+////////////////////////
+
+/*************************************************
+THE SOURCE HAS A LOT OF USEFUL COMMENTS
+IT MAY BE WISE TO LOOK THROUGH THE SOURCE COMMENTS
+**************************************************/
+
+---------
+main.dart
+---------
+  DESCRIPTION:
+  - File to run runApp() which inflates given widget and attaches it to screen
+  - Entry point of a Flutter app
+  
+  @class BasicFlutterApp
+    - sets up device orientation
+    - sets up the app by returning a MaterialApp which is then used in runApp()
+    - sets the home of MaterialApp to @class Changefly which is imported (changefly.dart)
+
+
+
+--------------
+changefly.dart
+--------------
+  DESCRIPTION:
+  - This is where we return the pageview which controls what the user sees
+  - We also create an [AnimationController] in this file to control the animation
+
+  @class Changefly
+    * AnimationController _controller   used to control the animation. Used 
+                                        in our FAB to reset and play animation
+
+    * int animationDuration             controls the length of the animation
+                                        we pass this into the _controller
+
+    * PageController _pageController    Used to control the page that is viewed
+    
+    * int _currentIndex                 current index of _pageController 
+                                        Used to show user which index they are orientation
+
+    - sets up the _controller and _pageController
+    - sets up PageView so user may swipe to see different logos
+    - sets up FAB(floating action button) so clicking it will cause animation restart
+    - PageView includes @class ChangeflyAnimation (changefly_animation.dart)
+                      & @class ChangeflyAnimation (changefly_animation2.dart)
+
+
+
+------------------------
+changefly_animation.dart
+------------------------
+  DESCRIPTION:
+  - Assembles the whole logo which is split into two seperate components
+    * LogoCube (logo/cube_animation.dart) *
+    * LogoHeader (logo/header_animation.dart) *
+  - Returns the first animation which is shown by changefly.dart
+
+  @class ChangeflyAnimation
+    * AnimationController controller   AnimationController passed in from changefly.dart
+
+    * Curve animationCurve             Used to define the animation curve needed for animation
+
+    - basically puts the two components into a column 
+    - passes the controller onto the other two components
+
+
+------------------------
+logo/cube_animation.dart
+------------------------
+* CHECK THE SOURCE COMMENTS. IT'S MUCH EASIER TO UNDERSTAND (Especially this part...) *
+
+  DESCRIPTION:
+  - Initial part of the Challenge
+  - Returns the animation of the cube portion of the animation
+
+  @class LogoCube
+    - Assembles the cube in a stack
+    - Animated builder to return a complex animation
+
+
+--------------------------
+logo/header_animation.dart
+--------------------------
+* CHECK THE SOURCE COMMENTS. IT'S MUCH EASIER TO UNDERSTAND *
+
+  DESCRIPTION:
+  - Initial part of the Challenge
+  - Returns the animation of the header portion of the animation(the changefly text)
+
+  @class LogoCube
+    - Wraps the changefly png in an Opacity widget 
+
+
+
+-------------------------
+changefly_animation2.dart
+-------------------------
+  DESCRIPTION:
+  - Assembles the whole logo which is split into two seperate components
+    * LogoCube (logo2/cube_animation.dart) *
+    * LogoHeader (logo2/header_animation.dart) *
+  - Returns the second animation which is shown by changefly.dart
+
+  @class ChangeflyAnimation
+    * AnimationController controller    AnimationController passed in from changefly.dart
+
+    - basically puts the two components into a column 
+    - passes the controller onto the other two components
+
+
+------------------------
+logo2/cube_animation.dart
+------------------------
+* CHECK THE SOURCE COMMENTS. IT'S MUCH EASIER TO UNDERSTAND *
+
+  DESCRIPTION:
+  - Bonus part of the Challenge
+  - Returns the animation of the cube portion of the animation
+
+  @class LogoCube
+    - Assembles the cube in a stack
+    - Uses an AnimatedBuilder to return a complex animation
+
+
+
+--------------------------
+logo2/header_animation.dart
+--------------------------
+* CHECK THE SOURCE COMMENTS. IT'S MUCH EASIER TO UNDERSTAND *
+
+  DESCRIPTION:
+  - Initial part of the Challenge
+  - Returns the animation of the header portion of the animation(the changefly text)
+
+  @class LogoCube
+    - Wraps the changefly png in an Opacity widget 
+    - Returns an AnimatedBuilder
