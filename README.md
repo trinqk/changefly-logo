@@ -1,11 +1,9 @@
 # Changefly Code Challenge
 
-Animated [Changefly](https://changefly.com) logo made with Flutter.
--Swipe right to see an alternative design
+Animated [Changefly](https://changefly.com) logo made with Flutter.  
+You can also swipe right to see an alternative design .     
 
-
-### USE AN ACTUAL DEVICE
-
+Try to use an actual device
 Emulators run on debug mode, causing animations to look choppy.
 
 ## Getting Started
