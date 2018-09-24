@@ -44,31 +44,6 @@ class _ChangeflyState extends State<Changefly> with SingleTickerProviderStateMix
     super.dispose();
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-
-      /// Changefly animations
-      body: Stack(
-        alignment: Alignment.bottomCenter,
-        children: <Widget>[
-          _buildAnimationPageView(),
-          _buildPageViewIndicator(),
-        ],
-      ),
-
-      /// Repeat animation button
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Color(0xFF50cbdf),
-        child: Icon(Icons.refresh,),
-        onPressed: () {
-          _controller.reset();
-          _controller.forward();
-        },
-      ),
-    );
-  }
-
   Widget _buildAnimationPageView() {
     // Actual animation stack
     return PageView(
@@ -79,7 +54,7 @@ class _ChangeflyState extends State<Changefly> with SingleTickerProviderStateMix
       },
       children: <Widget>[
 
-        /// [TickerMode] stops the animation of pages not showing
+        /// [TickerMode] stops the animation of pages not showing (It's supposed to at least)
         /// [Center] centers the widget
 
         // Initial part of challenge
@@ -113,6 +88,31 @@ class _ChangeflyState extends State<Changefly> with SingleTickerProviderStateMix
           dotColor: Colors.blueGrey,
           dotActiveColor: Color(0xFF50cbdf),
         ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+
+      /// Changefly animations
+      body: Stack(
+        alignment: Alignment.bottomCenter,
+        children: <Widget>[
+          _buildAnimationPageView(),
+          _buildPageViewIndicator(),
+        ],
+      ),
+
+      /// Repeat animation button
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Color(0xFF50cbdf),
+        child: Icon(Icons.refresh,),
+        onPressed: () {
+          _controller.reset();
+          _controller.forward();
+        },
       ),
     );
   }

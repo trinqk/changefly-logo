@@ -43,6 +43,7 @@ class LogoHeader extends StatelessWidget {
 
   }
 
+  // Return the header
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(

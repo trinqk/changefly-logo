@@ -21,6 +21,8 @@ class ChangeflyAnimation2 extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
+
+        /// Assemble the whole animation
         LogoCube(controller: controller),
         LogoHeader(controller: controller,),
       ],
